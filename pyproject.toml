@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "atomic-operator-attire-logger"
+version = "1.1.0"
+description = "ATTiRe (https://github.com/SecurityRiskAdvisors/ATTiRe) report handler for atomic-operator."
+authors = ["jamesgeraghty"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pydantic = "^1.9.0"
+py-attire-schema = "^1.1.0"
+
+[tool.poetry.dev-dependencies]
+# py-attire-logger = { path = "../py-attire-logger/", develop = true }
+atomic-operator = { path = "../atomic-operator/", develop = true }
+pytest = "^7.1.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+#pick = "1.2.0"
+
